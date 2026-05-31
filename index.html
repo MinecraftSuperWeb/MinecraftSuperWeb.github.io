@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Minecraft</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #1e1e1e;
+    color: rgb(255, 255, 255);
+}
+
+header {
+    background: linear-gradient(90deg, #2e7d32, #4caf50);
+    padding: 30px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+.top-right-link {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  background: #4caf50;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+nav {
+    background: #111;  
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 15px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #4caf50;
+}
+
+section {
+    padding: 40px;
+}
+
+.card {
+    background: #2b2b2b;
+    padding: 25px;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+h2 {
+    color: #4caf50;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #4caf50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #2e7d32;
+}
+
+.top-right-link {
+    background: #000000;
+    color: white;
+}
+
+.inventory {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.item {
+    background: #2d302d;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.item:hover {
+    transform: scale(1.05);
+    background: #4caf50;
+}
+
+footer {
+    background: #111;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+} 
+
+.code {
+    background: black;
+    color: #00ff00;
+    padding: 15px;
+    border-radius: 10px;
+    overflow-x: auto;
+}
+</style>
+</head>
+<body>
+
+<header>
+Minecraft 
+<button class="top-right-link" class="special-button" onclick="Feedback()">
+Feedback
+</button>
+</header>
+
+<p id="header"></p>
+</div>
+</section>
+
+<nav>
+
+<a href="#Infos">Infos</a>
+<a href="#bauen">Bauen</a>
+<a href="#redstone">Redstone</a>
+<a href="#durchspielen">Durchspielen</a>
+<a href="#inventar">Items</a>
+<a href="#Moduse">Moduse</a>
+<a href="#Kreaturen">Kreaturen</a>
+<a href="#Helfende Commands">Helfende Commands</a>
+<a href="#Bau Ideen">Bau Ideen</a>
+<a href="#Tutorials">Tutorials</a>
+<a href="#Crafting Rezepte">Crafting Rezepte</a>
+<a href="#Fotos">Fotos</a>
+</nav>
+
+<section id="Infos">
+<div class="card">
+<h2> Infos über Minecraft</h2>
+
+<p>
+Klicke für die Info...
+</p>
+
+<button onclick="Info()">
+Info
+</button>
+
+<p id="hallo"></p>
+</div>
+</section>
+
+    
+<section id="bauen">
+<div class="card">
+<h2> Bauen in Minecraft</h2>
+
+<p>
+Bauen ist einer der wichtigsten Teile von Minecraft. Du kannst Häuser, Städte, Burgen, Redstone-Maschinen oder ganze Welten bauen.
+</p>
+
+<h3>🌲 Der Start</h3>
+<ol>
+<li>Bäume abbauen</li>
+<li>Holzbretter craften</li>
+<li>Werkbank herstellen</li>
+<li>Holzspitzhacke craften</li>
+<li>Stein abbauen</li>
+<li>Steinwerkzeuge herstellen</li>
+<li>Kohle suchen</li>
+<li>Fackeln craften</li>
+</ol>
+
+<h3>🏡 Erste Base</h3>
+<p>
+Eine gute Starter-Base sollte haben:
+</p>
+<ul>
+<li>Bett</li>
+<li>Öfen</li>
+<li>Kisten</li>
+<li>Crafting Table</li>
+<li>Farm</li>
+<li>Beleuchtung gegen Monster</li>
+</ul>
+
+<h3>🧱 Gute Baumaterialien</h3>
+<ul>
+<li>Holz = einfacher Start</li>
+<li>Stein = stabil und günstig</li>
+<li>Quarz = modern</li>
+<li>Ziegel = mittelalterlich</li>
+<li>Beton = moderne Häuser</li>
+<li>Glas = Fenster und Dekoration</li>
+</ul>
+
+<h3>💡 Bautipps</h3>
+<ul>
+<li>Nutze verschiedene Blöcke zusammen</li>
+<li>Verwende Treppen und Slabs für Details</li>
+<li>Beleuchte alles mit Fackeln oder Lanterns</li>
+<li>Baue nicht nur Würfelhäuser</li>
+<li>Nutze Tiefe und Fenster</li>
+</ul>
+
+<div class="code">
+Holz → Bretter → Stöcke → Werkzeuge
+</div>
+</div>
+</section>
+
+<section id="redstone">
+<div class="card">
+<h2> Redstone Komplett Guide</h2>
+
+<img src="Redstone.png" width="200"> 
+<img src="Redstone-Erz.png" width="200">
+
+<p>
+Redstone funktioniert wie Strom oder Elektronik in Minecraft. Damit kannst du Türen, Fallen, Farmen oder Computer bauen.
+</p>
+
+<h3>🔴 Wichtige Redstone Blöcke</h3>
+<ul>
+<li>Redstone-Staub = Kabel</li>
+<li>Hebel = dauerhafter Strom</li>
+<li>Knopf = kurzer Strom</li>
+<li>Druckplatte = aktiviert durch Spieler/Mobs</li>
+<li>Repeater = Signal verlängern</li>
+<li>Comparator = Signale vergleichen</li>
+<li>Piston = Blöcke bewegen</li>
+<li>Sticky Piston = zieht Blöcke zurück</li>
+<li>Observer = erkennt Updates</li>
+<li>Dispenser = schießt Items</li>
+<li>Dropper = wirft Items aus</li>
+<li>Hopper = transportiert Items</li>
+</ul>
+
+<h3>💡 Einfache Schaltungen</h3>
+
+<div class="code">
+Hebel → Redstone → Lampe
+</div>
+
+<div class="code">
+Knopf → Piston → Geheimtür
+</div>
+
+<h3>🚪 Automatische Türen</h3>
+<p>
+Mit Pistons und Redstone kannst du geheime Türen bauen.
+</p>
+
+<h3>🌾 Automatische Farmen</h3>
+<ul>
+<li>Zuckerrohr Farm</li>
+<li>Kürbis Farm</li>
+<li>Kaktus Farm</li>
+<li>Mob Farm</li>
+<li>Villager Trading Hall</li>
+</ul>
+
+
+
+<button onclick="redstoneTip()">
+Redstone Tipp
+</button>
+
+<p id="tip"></p>
+</div>
+</section>
+
+<section id="durchspielen">
+<div class="card">
+<h2> Minecraft Durchspielen Guide</h2>
+
+<img src="Ender_Dragon.webp" width="255">
+
+ 
+
+<h3>🌍 Early Game</h3>
+<ol>
+<li>Holz abbauen</li>
+<li>Werkzeuge craften</li>
+<li>Haus bauen</li>
+<li>Essen sammeln</li>
+<li>Eisen finden</li>
+</ol>
+
+<h3>⛏️ Mid Game</h3>
+<ol>
+<li>Diamanten finden</li>
+<li>Diamantrüstung herstellen</li>
+<li>Enchanting Table bauen</li>
+<li>Nether Portal bauen</li>
+</ol>
+
+<h3>🔥 Nether</h3>
+<p>
+Im Nether findest du:
+</p>
+<ul>
+<li>Blaze Rods</li>
+<li>Netherite</li>
+<li>Nether Fortress</li>
+<li>Piglins</li>
+<li>Wither Skeletons</li>
+</ul>
+
+<h3>🟣 Das End finden</h3>
+<ol>
+<li>Blaze Powder herstellen</li>
+<li>Mit Enderperlen kombinieren</li>
+<li>Eyes of Ender werfen</li>
+<li>Stronghold finden</li>
+<li>End Portal aktivieren</li>
+</ol>
+
+<h3>🐉 Enderdrachen besiegen</h3>
+<ul>
+<li>Zuerst die End-Kristalle zerstören</li>
+<li>Bogen benutzen</li>
+<li>Nahkampf wenn der Drache landet</li>
+<li>Wasser gegen Fallschaden nutzen</li>
+</ul>
+
+<h3>💀 Weitere Bosse</h3>
+<ul>
+<li>Wither</li>
+<li>Warden</li>
+<li>Elder Guardian</li>
+</ul>
+
+<div class="code">
+10x Obsidian + Feuerzeug = Nether Portal
+</div>
+</div>
+</section>
+
+<section id="inventar">
+<div class="card">
+<h2> Minecraft Inventar & Items</h2>
+
+<img src="300px-DataValuesBeta.png" width="255">
+
+<p>
+Klicke auf ein Item für Informationen.
+</p>
+
+<div class="inventory">
+
+<div class="item" onclick="itemInfo('Diamant: Sehr starkes Material für Werkzeuge, Waffen und Rüstung.')">
+<img src="diamant.webp" width="90">
+<br>Diamant
+</div>
+
+<div class="item" onclick="itemInfo('Werkbank: Damit kannst du Sachen herstellen.')">
+<img src="Werkbank.png" width="90">
+<br>Werkbank
+</div>
+
+<div class="item" onclick="itemInfo('Netherite: Das stärkste Material im Spiel.')">
+<img src="netherite.webp" width="90">
+<br>Netherite
+</div>
+
+<div class="item" onclick="itemInfo('Ofen: Mit einem Ofen kannst du dir Fleisch braten.')">
+<img src="Ofen.jpg" width="90">
+<br>Ofen
+</div>
+
+<div class="item" onclick="itemInfo('Redstone: Für Maschinen und automatische Systeme.')">
+<img src="Redstone.png" width="90">
+<br>Redstone
+</div>
+
+<div class="item" onclick="itemInfo('Bett: Mit dem Bett kannst du schlafen und die Nacht überspringen.')">
+<img src="Bett.png" width="90">
+<br>Bett
+</div>
+
+<div class="item" onclick="itemInfo('Eisen: Für Werkzeuge, Schienen, Eimer und Rüstung.')">
+<img src="eisen.webp" width="90">
+<br>Eisen
+</div>
+
+<div class="item" onclick="itemInfo('Amboss: Mit dem Amboss kannst du Werkzeuge reparieren und Dinge Verzaubern/ Umbennenen.')">
+<img src="Amboss.png" width="90">
+<br>Amboss
+</div>
+
+<div class="item" onclick="itemInfo('Gold: Gut für Handel mit Piglins.')">
+<img src="gold.webp" width="90">
+<br>Gold
+</div>
+
+<div class="item" onclick="itemInfo('Obsidian: Sehr harter Block für Nether-Portale.')">
+<img src="obsidian.webp" width="90">
+<br>Obsidian
+</div>
+
+<div class="item" onclick="itemInfo('Enderperlen: Zum Finden des End-Portals.')">
+<img src="enderperle.webp" width="90">
+<br>Enderperle
+</div>
+
+<div class="item" onclick="itemInfo('Blaze Rods: Für Braustände und Eyes of Ender.')">
+<img src="blaze rod.jpg" width="90">
+<br>Blaze Rod
+</div>
+
+<div class="item" onclick="itemInfo('TNT: Explosiver Block.')">
+<img src="tnt.jpg" width="90">
+<br>TNT
+</div>
+
+<div class="item" onclick="itemInfo('Elytra: Damit kannst du fliegen.')">
+<img src="elytra.webp" width="90">
+<br>Elytra
+</div>
+
+<div class="item" onclick="itemInfo('Totem of Undying: Rettet dich vor dem Tod.')">
+<img src="totem.jpg" width="90">
+<br>Totem
+</div>
+
+<div class="item" onclick="itemInfo('Beacon: Gibt starke Effekte in der Nähe.')">
+<img src="beacon.webp" width="90"
+br>Beacon
+</div>
+
+</div>
+
+<h3>⚒️ Wichtige Werkzeuge</h3>
+<ul>
+<li>Spitzhacke = Stein und Erze abbauen</li>
+<li>Axt = Holz schneller abbauen</li>
+<li>Schaufel = Erde und Sand abbauen</li>
+<li>Hacke = Farming</li>
+<li>Schwert = Kampf</li>
+</ul>
+
+<h3>🛡️ Rüstungen</h3>
+<ul>
+<li>Leder</li>
+<li>Eisen</li>
+<li>Gold</li>
+<li>Diamant</li>
+<li>Netherite</li>
+</ul>
+
+<p id="info"></p>
+</div>
+</section>
+
+<section id="Moduse">
+<div class="card">
+<h2> Spielbare Moduse</h2>
+
+<p>
+Im Typischen Minecraft gibt es 4 Moduse
+</p>
+
+<h3>Die 4 Moduse heißen:</h3>
+<ul>
+<li>1.Überleben</li>
+<li>2.Kreativ</li>
+<li>3.Abenteuer</li>
+<li>4.Zuschauer</li>
+</ul>
+
+<button onclick="Überleben()">
+Überleben
+</button>
+
+<button onclick="Kreativ()">
+Kreativ
+</button>
+
+<button onclick="Abenteuer()">
+Abenteuer
+</button>
+
+<button onclick="Zuschauer()">
+Zuschauer
+</button>
+
+<p id="test"></p>
+</div>
+</section>
+
+<section id="Kreaturen">
+<div class="card">
+<h2>Kreaturen</h2>
+
+<p>
+In Minecraft gibt es viele verschiedene Kreaturen, die bekanntesten sind Folgende:
+</p>
+
+<img src="Minecraft Mobs.webp" width="255">
+
+<p id="Kreaturen"></p>
+</div>
+</section>
+
+<button onclick="Creeper">
+<img src="Kuh.webp" width="124">
+Kuh
+</button>
+
+<button onclick="Creeper">
+<img src="Schwein.webp" width="144">
+Schwein
+</button>
+
+<button onclick="Creeper">
+<img src="White_Sheep_JE3_BE6.png" width="120">
+Schaf
+</button>
+
+<button onclick="Creeper">
+<img src="Zombie.webp" width="90">
+Zombie
+</button>
+
+<button onclick="Creeper">
+<img src="Skelett.webp" width="86">
+Skellet
+</button>
+
+<button onclick="Creeper">
+<img src="Creeper.webp" width="89">
+Creeper
+</button>
+
+<button onclick="Creeper">
+<img src="Spinne.webp" width="177">
+Spinne
+</button>
+
+<button onclick="Creeper">
+<img src="Ender Man.webp" width="136">
+Enderman
+</button>
+
+<p id="Kreaturen"></p>
+</div>
+</section>
+
+<button onclick="Creeper">
+<img src="Villager.webp" width="97">
+Villager
+</button>
+
+<p id="Kreaturen"></p>
+</div>
+</section>
+
+<section id="Helfende Commands">
+<div class="card">
+<h2>Helfende Commands</h2>
+
+<p>
+In Minecraft gibt es viele verschiedene Helfende Commands und das sind die wichtigsten:
+</p>
+
+<button class="Command 1" onclick="itemInfo('(  /give @s command_block  ) Der Command Block kann die alles Ermöglichen, Blöcke geben, Gebäude Kopieren und vieles mehr.')">
+<img src="Command-Block-Minecraft.png" width="169"
+br> Command Block
+</button>
+
+<button class="Command 1" onclick="itemInfo('(  /give @s barrier  ) Dieser Block ist Unsichtbar aber ist da...')">
+<img src="Barrier.webp" width="90"
+br> Barrier
+</button>
+
+<button class="Command 1" onclick="itemInfo('(  /give @s structure_block  ) Mit diesem Block kannst du Sachen Kopieren und Einfügen.')">
+<img src="structure Block.webp" width="88"
+br> Structure Block
+</button>
+
+<button class="Command 1" onclick="itemInfo('(  /give @s light_block_15  ) Dieser Block ist unsichtbar gibt aber Licht.')">
+<img src="Heller_Block_14.png" width="94"
+br> Light Block
+</button>
+
+<button class="Command 1" onclick="itemInfo('(  /give @s jigsaw  ) Mit diesem Block kannst du Vorlagen erstellen.')">
+<img src="Jig Saw.webp" width="94"
+br> Jig Saw
+</button>
+
+<p id="Command 1"></p>
+</div>
+</section>
+
+<section id="Bau Ideen">
+<div class="card">
+<h2>Bau Ideen</h2>
+
+<p>
+Das sind unsere Lieblings Bau Ideen:
+</p>
+
+<h3> Das sind Die Top 10: </h3>
+<ul>
+<li>1.Burg/ Schloss</li>
+<li>2.Base</li>
+<li>3.Forttgeschrittenen Haus</li>
+<li>4.VIlla groß/ klein</li>
+<li>5.Baumhaus</li>
+<li>5.Hafen</li>
+<li>6.Das eigene Haus/ Wohnung</li>
+<li>7.Untergrunds Base/ Haus</li>
+<li>8.Kirche</li>
+<li>9.Geheim Eingang mit Redstone</li>
+<li>10.große/ kleine Stadt/ Dorf</li>
+</ul>
+
+<img src="Bauidee.webp" width="300">
+
+<p id="Bau Ideen"></p>
+</div>
+</section>
+
+<section id="Tutorials">
+<div class="card">
+<h2>Tutorials</h2>
+
+<p>
+Hier Findest du ein paar Kurze Touturials um etaws großes/ kleines /cooles/ spanendes zu Bauen:
+</p>
+
+<p>
+Baue als erstes einen Umriss.
+</p> 
+
+<img src="Schritt 1.png" width="300">
+
+<p>
+Dann baue ihn höher.
+</p>
+
+<img src="Schritt 2.png" width="300">
+
+<p>
+Und dann Fertig.
+</p>
+
+<img src="Schritt 3.png" width="300">
+
+<p>
+Dann fange mit dem Dach an.
+</p>
+
+<img src="Schritt 4.png" width="300">
+
+<p>
+Dann baue es Fertig.
+</p>
+
+<img src="Schritt 5.png" width="300">
+
+<p>
+Baue es aus.
+</p>
+
+<img src="Schritt 6.png" width="300">
+
+<p>
+Und dann musst du an der in Rot Markierten stelle gedrehte Stufen bauen.
+</p>
+
+<img src="Schritt 7.png" width="300">
+
+<p>
+...
+</p>
+
+<img src="Schritt 8.png" width="300">
+
+<p>
+Dann füge Fenster hinzu.
+</p>
+
+<img src="Schritt 9.png" width="300">
+
+<p>
+Und ein paar Details.
+</p>
+
+<img src="Schritt 10.png" width="300">
+
+<p>
+Ein Kamin wäre auch nicht schlecht.
+</p>
+
+<img src="Schritt 11.png" width="300">
+
+<p>
+So sollte es aussehen.
+</p>
+
+<img src="Schritt 12.png" width="300">
+
+<p>
+Noch ein paar Detail auf der Seite.
+</p>
+
+<img src="Schritt 13.png" width="300">
+
+<p>
+Und Fertig ist dein Starter Haus.
+</p>
+
+<p id="Tutorials"></p>
+</div>
+</section>
+
+<section id="Crafting Rezepte">
+<div class="card">
+
+<h2>Crafting Rezepte</h2>
+
+<p>
+Hacke:
+</p>
+
+<img src="Hacke.png" width="400">
+
+<p>
+Schaufel:
+</p>
+
+<img src="Schaufel.png" width="400">
+
+<p>
+Spitzhacke:
+</p>
+
+<img src="Spitzhacke.png" width="400">
+
+<p>
+Schwert:
+</p>
+
+<img src="Schwert.png" width="400">
+
+<p>
+Axt:
+</p>
+
+<img src="Axt.png" width="400">
+
+<p>
+Hose:
+</p>
+
+<img src="Hose.png" width="400">
+
+<p>
+Helm:
+</p>
+
+<img src="Helm.png" width="400">
+
+<p>
+Brust-Schutz:
+</p>
+
+<img src="Brust Schutz.png" width="400">
+
+<p>
+Schuhe:
+</p>
+
+<img src="Schuhe.png" width="400">
+
+<p id="Crafting Rezepte"></p>
+</div>
+</section>
+
+<section id="Fotos">
+<div class="card">
+<h2>Fotos aus Meiner (Mittelalter) Welt</h2>
+
+<img src="Screenshot 2026-04-19 183827.png" width="700">
+<img src="Burg Hell.png" width="700">
+<img src="Burg Dunkel.png" width="700">
+<img src="Sonnenuntergag Burg.png" width="800">
+<img src="Hafen nah.png" width="750">
+<img src="Königs Rast.png" width="700">
+<img src="Koppl.png" width="700">
+<img src="Mini Nature.png" width="700">
+<img src="Deep Fire.png" width="700">
+<img src="Tote am Galgen.png" width="700">
+<img src="Mini Wiesberg.png" width="750">
+<img src="Wiesberg.png" width="900">
+<img src="Scheiter haufen.png" width="700">
+<img src="Teich.png" width="700">
+<img src="Schloss Toast.png"  width="700">
+<img src="Mc Chicken eröffnung.png" width="700">
+
+
+<footer>
+Minecraft Website | Erstellt mit HTML, CSS & JavaScript von Pierre. Zielke
+</footer>
+
+<script>
+function welcome() {
+    alert('Willkommen in der Minecraft Mega Guide Website!');
+}
+
+function redstoneTip() {
+    document.getElementById('tip').innerHTML =
+    '💡 Repeater verstärken Redstone-Signale und verlängern die Reichweite.';
+}
+
+function itemInfo(text) {
+    document.getElementById('info').innerHTML = text;
+}
+
+function Überleben() {
+    document.getElementById('test').innerHTML =
+    'Im Überlebens Modus kannst du dein können auf die Probe stellen und herausfinden wie gut du im Überleben bist. Kurz: Du must alles selber (craften) und kannst Sterben.';
+}
+
+function Kreativ() {
+    document.getElementById('test').innerHTML =
+    'Im Kreativ Modus kannst du Bauen bist du keine Ideen mehr hast, kannst Fliegen und nicht Sterben.';
+}
+
+function Abenteuer() {
+    document.getElementById('test').innerHTML =
+    'Der Abenteuer Modus ist fast gleich wie der Überlebens Modus nur dass du nichts Abbauen oder Platzieren kannst.';
+}
+
+function Zuschauer() {
+    document.getElementById('test').innerHTML =
+    'Im Zuschauer Modus bist du wie ein Geißt, du kannst durch Blöcke fliegen und nicht Sterben aber du bist für andere Unsichtbar, Plazieren oder Abbauen kannst du auch nicht.';
+}
+ 
+function Info() {
+    document.getElementById('hallo').innerHTML =
+    'Minecraft ist ein sehr berühmtes und auch beliebtes Videospiel, dass am 17.Mai 2009 als frühe Version (Early Acces) für den PC veröffentlicht wurde. Die vollständige, offizielle Version folgte am 18.November 2011. Somit ist Minecraft heute schon über 15 Jahre alt… Es wurde öfter als 300 Millionen mal verkauft. Minecraft entstand als kleines Wochenprojekt von dem Schwedischen Programmierers Markus “Notch“ Persson, der sich von Spielen wie Infiniminer und RubyDung inspirieren ließ. Das Spiel begann als Prototyp namens ,,Cave Game“, wurde jedoch schnell Weiterentwickelt, da Persson das Feedback der Community berücksichtigte und neue Funktionen wie Gegner, Crafting und ein Tag-Nacht-System hinzufügte. 2010 gründete er zusammen mit Kollegen die Firma Mojang, um die Entwicklung Voranzutreiben, und das Spiel wuchs durch die wachsende Fangemeinde und Mundpropaganda zu einem weltweiten Phänomen heran.';
+}
+
+function itemInfo(text) {
+    document.getElementById('Command 1').innerHTML = text;
+}
+
+function Feedback() {
+    document.getElementById('header').innerHTML =
+    ' Email : pierre.zielke@icloud.com...........    Ich freue mich über jedes Feedback, egal ob positiv oder negativ. Es hilft mir, die Website zu verbessern und auf die Bedürfnisse der Besucher einzugehen. Vielen Dank für deine Unterstützung!';
+}
+
+</script>
+
+</body>
+</html>
