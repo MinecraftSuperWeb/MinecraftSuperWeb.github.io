@@ -122,6 +122,78 @@ footer {
     border-radius: 10px;
     overflow-x: auto;
 }
+
+/* Kontaktformular: Basis-Styling */
+#contact {
+    padding: 30px 40px;
+}
+#contact form {
+    max-width: 900px;
+    margin: 0 auto;
+}
+#contact .form-row {
+    display: flex;
+    gap: 12px;
+}
+#contact .form-row input {
+    flex: 1;
+    width: 100%;
+    font-size: 18px;
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #3a3a3a;
+    background: #232323;
+    color: #fff;
+    box-sizing: border-box;
+}
+#contact textarea {
+    width: 100%;
+    font-size: 18px;
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #3a3a3a;
+    background: #232323;
+    color: #fff;
+    min-height: 160px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+#contact button {
+    font-size: 18px;
+    padding: 12px 20px;
+    border-radius: 10px;
+}
+
+#contact .form-row input:focus,
+#contact textarea:focus {
+    outline: 2px solid #4caf50;
+    outline-offset: 2px;
+}
+
+/* Responsive: Felder untereinander und größer auf Mobilgeräten */
+@media (max-width: 700px) {
+    #contact .form-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+    #contact .form-row input {
+        font-size: 20px;
+        padding: 16px;
+    }
+    #contact textarea {
+        font-size: 20px;
+        padding: 16px;
+        min-height: 200px;
+    }
+    #contact button {
+        width: 100%;
+        padding: 14px;
+        font-size: 20px;
+    }
+    #contact {
+        padding: 20px;
+    }
+}
 </style>
 </head>
 <body>
@@ -148,6 +220,7 @@ Minecraft
 <a href="#Tutorials">Tutorials</a>
 <a href="#Crafting Rezepte">Crafting Rezepte</a>
 <a href="#Fotos">Fotos</a>
+<a href="#contact">Feedback</a>
 </nav>
 
 <section id="Infos">
@@ -617,7 +690,7 @@ br> Jig Saw
 Das sind unsere Lieblings Bau Ideen:
 </p>
 
-<h3> Das sind Die Top 10: </h3>
+<h3> Das sind Die Top: </h3>
 <ul>
 
 <h2> Anfänger:</h2>
@@ -632,7 +705,7 @@ Das sind unsere Lieblings Bau Ideen:
 <li>2.Carakter</li>
 <li>3.Schiff</li>
 <li>4.Bibliothek</li>
-<li>5.Bibliothek</li>
+<li>5.Obsidinan Farm</li>
 
 <h2> Experten:</h2>
 <li>1.Burg/ Schloss</li>
@@ -859,8 +932,29 @@ Schuhe:
 <img src="Sandkiste.png" width="700">
 <img src="Ullmanns Innen.png" width="700">
 <img src="Vorne.png" width="700">
-<img src="Werkstatt.png" width="700">
+<img src="Werkstatt 1.png" width="700">
 <img src="Wohnzimmer Innen.png" width="700">
+
+<section id="contact">
+    <div class="card">
+        <h2>Feedback</h2>
+        <form action="https://formsubmit.co/pierre.zielke@icloud.com" method="POST">
+            <!-- pierre.zielke@icloud.com -->
+            <input type="hidden" name="_subject" value="Neue Kontaktanfrage von der Website">
+            <input type="hidden" name="_captcha" value="false">
+            <div class="form-row">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="_replyto" placeholder="E-Mail" required>
+            </div>
+            <div style="margin-top:8px">
+                <textarea name="message" rows="5" placeholder="Nachricht"></textarea>
+            </div>
+            <div style="margin-top:8px">
+                <button type="submit">Senden</button>
+            </div>
+        </form>
+    </div>
+</section>
 
 <footer>
 Minecraft Website | Erstellt mit HTML, CSS & JavaScript von Pierre. Zielke
